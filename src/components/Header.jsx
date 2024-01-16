@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { memo } from 'react';
 
-export default function Header() {
+function Header() {
 	return (
 		<div className='w-[100%] bg-white flex flex-col justify-center items-center py-[20px] mb-[10px] [box-shadow:0_2px_6px_0_rgba(0,_0,_0,_0.07)] fixed z-10'>
 			<a href='' className="w-[1000px]">
@@ -23,3 +24,5 @@ export default function Header() {
 		</div>
 	)
 }
+
+export default memo(Header)
